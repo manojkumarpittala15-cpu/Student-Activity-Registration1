@@ -1,0 +1,142 @@
+/* Common Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 15px;
+}
+.btn {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:focus {
+    outline: 2px solid blue;
+    outline-offset: 3px;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+/* Sections and Articles */
+section, article, aside {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    margin: 0;
+}
+
+header, footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.form-container {
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: gray;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid blue;
+}
+/* Better text appearance */
+label {
+    font-size: 15px;
+    color: #222;
+}
+
+/* Input focus */
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid blue;
+    border-color: blue;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #0077cc;
+}
+
+/* Smooth form design */
+.form-container {
+    line-height: 1.5;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%;
+        padding: 12px;
+    }

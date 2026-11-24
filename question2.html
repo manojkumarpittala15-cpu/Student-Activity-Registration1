@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Activity Registration Form">
+    <title>Student Registration Form</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student activity Registration</h1>
+        <p>Register for university activities</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <h2>Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <!-- Student ID -->
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid"
+                       placeholder="Enter your student ID" required>
+
+                <!-- Department -->
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">CSE</option>
+                    <option value="AIML">CSE AIML</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="IT">IT</option>
+                </select>
+
+                <!-- Year -->
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+                <!-- Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="Male" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Other">
+                        Other
+                    </label>
+                </fieldset>
+
+                <!-- Activities -->
+                <fieldset>
+                    <legend>Select Activities:</legend>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Sports">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Coding">
+                        Coding
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Cultural">
+                        Cultural Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Technical">
+                        Technical Events
+                    </label>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="4"
+                          placeholder="Enter your message"></textarea>
+
+                <!-- Buttons -->
+                <button type="submit">Register</button>
+                <button type="reset" class="reset-btn">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Student Activity Portal</p>
+    </footer>
+
+</body>
+</html>
